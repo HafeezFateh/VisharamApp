@@ -10,10 +10,24 @@
 </head>
 <body class="min-h-screen  bg-gradient-to-br from-gray-800 via-blue-950 to-gray-900">
     <div class="">
-        <div id="header" class="p-4 fixed z-10 inset-x-5 top-5 bg-slate-50/20 rounded-lg backdrop-blur-3xl  flex items-center justify-between">
-            <h1 class="text-2xl text-slate-100 font-semibold ">Visharam App</h1>
-            <span  class="cursor-pointer material-symbols-outlined text-white lg:hidden">menu</span>
+        <div class="flex flex-col">
+            <!-- Header -->
+            <div id="header" class="top-5 fixed p-4 z-10  inset-x-5  bg-slate-50/20 rounded-lg backdrop-blur-3xl flex items-center justify-between">
+                <h1 class="text-2xl text-slate-100 font-semibold">Visharam App</h1>
+                <span onclick="handleClick()" class="cursor-pointer material-symbols-outlined text-white lg:hidden">menu</span>
+            </div>
+
+            <!-- Responsive Links below header -->
+            <div id="responsive-header" class="hidden flex  flex-col mx-5 mt-25 w-auto gap-2  bg-slate-50/20 backdrop-blur-3xl rounded-lg ">
+                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2 rounded-t-lg">About us</a>
+                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2">News & updates</a>
+                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2">Blog</a>
+                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2">Town history</a>
+                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2 rounded-b-lg">Contact us</a>
+            </div>
         </div>
+
+        
         <div class="mx-5 p-2 mt-30">
             <h1 class="text-3xl text-slate-50 ">Welcome to Visharam App</h1>
             <p class="mt-1 text-slate-400 font-light text-lg">Find and post advertisements, directories, and other helpful resources</p>
@@ -23,7 +37,7 @@
             <p class="text-white font-light"><span class="font-semibold text-gray-300">Trending Ads:</span> Checkout</p>
             <span class="material-symbols-outlined group-hover:translate-x-2 transition text-slate-300">chevron_right</span>
         </div>
-        <div class="group mx-5 w-[350px] flex items-center  gap-2 shadow-lg hover:shadow-2xl cursor-pointer my-5 border border-slate-900 px-4 py-1 bg-white/90 backdrop-blur-3xl rounded-lg hover:-translate-y-1 transition">
+        <div class="group mx-5 w-[340px] flex items-center  gap-2 shadow-lg hover:shadow-2xl cursor-pointer my-5 border border-slate-900 px-4 py-1 bg-white/90 backdrop-blur-3xl rounded-lg hover:-translate-y-1 transition">
             <div class="w-2 h-2 rounded-full bg-gray-700"></div>
             <p class="text-slate-800"><span class="font-semibold text-gray-800">Advertise with us:</span> Reach Audiences</p>
             <span class="ml-auto material-symbols-outlined group-hover:translate-x-2 transition text-gray-900">chevron_right</span>
@@ -62,9 +76,9 @@
         <div class="">
             <h1 class="text-xl text-slate-200 p-5 text-center font-semibold">Visharam App</h1>
             <p class="font-light text-gray-400 text-center">Developed by <span class="font-semibold">GreatXt</span></p>
-            <p class="text-sm text-gray-400 text-center mt-2">© 2025 VisharamApp. All rights reserved.</p>
+            <p class="text-sm text-gray-400 text-center mt-3">© 2025 VisharamApp. All rights reserved.</p>
         </div>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
