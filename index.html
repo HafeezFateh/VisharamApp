@@ -3,46 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VisharamApp</title>
+    <title>TownHub</title>
     <link rel="stylesheet" href="./output.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
-<body class="min-h-screen  bg-gradient-to-br from-gray-800 via-blue-950 to-gray-900">
+<body class="min-h-screen  bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900">
     <div class="">
         <div class="flex flex-col">
             <!-- Header -->
             <div id="header" class="top-5 fixed p-4 z-10  inset-x-5  bg-slate-50/20 rounded-lg backdrop-blur-3xl flex items-center justify-between">
-                <h1 class="text-2xl text-slate-100 font-semibold">Visharam App</h1>
+                <h1 class="text-2xl text-slate-100 font-semibold">Townora App</h1>
                 <span onclick="handleClick()" class="cursor-pointer material-symbols-outlined text-white lg:hidden">menu</span>
             </div>
 
             <!-- Responsive Links below header -->
-            <div id="responsive-header" class="hidden flex  flex-col mx-5 mt-25 w-auto gap-2  bg-slate-50/20 backdrop-blur-3xl rounded-lg ">
-                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2 rounded-t-lg">About us</a>
-                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2">News & updates</a>
-                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2">Blog</a>
-                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2">Town history</a>
-                <a href="" class="text-white hover:bg-slate-700/90 px-4  py-2 rounded-b-lg">Contact us</a>
+            <div id="responsive-header" class="hidden flex fixed w-auto z-10 inset-x-5 flex-col  mt-25  gap-2  bg-slate-50/10 backdrop-blur-3xl rounded-lg ">
+                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-t-lg">About us</a>
+                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">News & updates</a>
+                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Blog</a>
+                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Town history</a>
+                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-b-lg">Contact us</a>
             </div>
         </div>
 
         
-        <div class="mx-5 p-2 mt-30">
-            <h1 class="text-3xl text-slate-50 ">Welcome to Visharam App</h1>
+        <div class="mx-5 p-2 mt-30 lg:flex flex-col items-center">
+            <h1 class="text-3xl text-slate-50 ">Welcome to Townora App</h1>
             <p class="mt-1 text-slate-400 font-light text-lg">Find and post advertisements, directories, and other helpful resources</p>
         </div>
-        <div class="group mx-5 w-fit flex items-center  gap-2 shadow-lg hover:shadow-2xl cursor-pointer my-5 border border-slate-500 px-4 py-1 bg-slate-800/30 rounded-lg hover:-translate-y-1 transition">
-            <div class="w-2 h-2 rounded-full bg-slate-50"></div>
-            <p class="text-white font-light"><span class="font-semibold text-gray-300">Trending Ads:</span> Checkout</p>
-            <span class="material-symbols-outlined group-hover:translate-x-2 transition text-slate-300">chevron_right</span>
+        <div class="flex flex-col my-5 lg:items-center">
+            <div class="group mx-5 w-fit flex items-center gap-2 shadow-lg hover:shadow-2xl cursor-pointer  border border-slate-500 px-4 py-1 bg-slate-800/30 rounded-lg hover:-translate-y-1 transition">
+                <div class="w-2 h-2 rounded-full bg-slate-50"></div>
+                <p class="text-white font-light"><span class="font-semibold text-gray-300">Trending Ads:</span> Checkout</p>
+                <span class="material-symbols-outlined group-hover:translate-x-2 transition text-slate-300">chevron_right</span>
+            </div>
+            <div class="group mx-5 w-[340px] flex items-center  gap-2 shadow-lg hover:shadow-2xl cursor-pointer my-5 border border-slate-900 px-4 py-1 bg-white/90 backdrop-blur-3xl rounded-lg hover:-translate-y-1 transition">
+                <div class="w-2 h-2 rounded-full bg-gray-700"></div>
+                <p class="text-slate-800"><span class="font-semibold text-gray-800">Advertise with us:</span> Reach Audiences</p>
+                <span class="ml-auto material-symbols-outlined group-hover:translate-x-2 transition text-gray-900">chevron_right</span>
+            </div>
         </div>
-        <div class="group mx-5 w-[340px] flex items-center  gap-2 shadow-lg hover:shadow-2xl cursor-pointer my-5 border border-slate-900 px-4 py-1 bg-white/90 backdrop-blur-3xl rounded-lg hover:-translate-y-1 transition">
-            <div class="w-2 h-2 rounded-full bg-gray-700"></div>
-            <p class="text-slate-800"><span class="font-semibold text-gray-800">Advertise with us:</span> Reach Audiences</p>
-            <span class="ml-auto material-symbols-outlined group-hover:translate-x-2 transition text-gray-900">chevron_right</span>
-        </div>
-        <div class="mx-5 grid grid-cols-2 gap-2 mt-10">
+        <div class="mx-5 grid grid-cols-2 lg:grid-cols-4 gap-2 mt-10">
             <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
                 <img src="./images/logs.svg" alt="" class="h-[100px] w-[100px]">
                 <h1 class="text-xl font-semibold text-slate-300">Directory</h1>
@@ -69,12 +71,24 @@
                     <h1 class="text-xl font-semibold text-slate-300">Medical</h1>
                 </div>
             </a>
+             <a href="#">
+                <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
+                    <img src="./images/job.svg" alt="" class="h-[100px] w-[100px]">
+                    <h1 class="text-xl font-semibold text-slate-300">Find Jobs</h1>
+                </div>
+            </a>
+             <a href="#">
+                <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
+                    <img src="./images/education.svg" alt="" class="h-[100px] w-[100px]">
+                    <h1 class="text-xl font-semibold text-slate-300">Education</h1>
+                </div>
+            </a>
         </div>
        
     </div>
     <footer class="mx-5 my-5 mt-30 p-2 bg-slate-100/10 shadow-lg backdrop-blur-3xl rounded-lg">
         <div class="">
-            <h1 class="text-xl text-slate-200 p-5 text-center font-semibold">Visharam App</h1>
+            <h1 class="text-xl text-slate-200 p-5 text-center font-semibold">Townora App</h1>
             <p class="font-light text-gray-400 text-center">Developed by <span class="font-semibold">GreatXt</span></p>
             <p class="text-sm text-gray-400 text-center mt-3">© 2025 VisharamApp. All rights reserved.</p>
         </div>
