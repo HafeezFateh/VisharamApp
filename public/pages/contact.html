@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TownHub</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900">
+    
+        <div class="flex flex-col">
+            <!-- Header -->
+            <div id="header" class="top-5 fixed p-4 z-10  inset-x-5  bg-slate-50/20 rounded-lg backdrop-blur-3xl flex items-center justify-between">
+                <a href="../index.html"><h1 class="text-2xl text-slate-100 font-semibold">Townora App</h1></a>
+                <span onclick="handleClick()" class="cursor-pointer material-symbols-outlined text-white lg:hidden">menu</span>
+            </div>
+
+            <!-- Responsive Links below header -->
+            <div id="responsive-header" class="hidden flex fixed w-auto z-10 inset-x-5 flex-col  mt-25  gap-2  bg-slate-50/10 backdrop-blur-3xl rounded-lg ">
+                <a href="./aboutus.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-t-lg">About us</a>
+                <a href="./comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">News & updates</a>
+                <a href="./comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Blog</a>
+                <a href="./comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Town history</a>
+                <a href="./contact.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-b-lg">Contact us</a>
+            </div>
+        </div>
+        
+        <form action="" class="flex-grow mx-5 mt-25 p-4 flex flex-col">
+            <h1 class="text-3xl text-white font-semibold my-5">Contact us</h1>
+            <label for="" class="text-xl font-semibold text-slate-200">Name</label>
+            <input type="text" class="bg-slate-300/30 border border-slate-600 my-3 rounded-lg p-1 ">
+            <label for="" class="text-xl font-semibold text-slate-200">Email</label>
+            <input type="email" class="bg-slate-300/30 border border-slate-600 my-3 rounded-lg p-1 ">
+               <label for="" class="text-xl font-semibold text-slate-200">Message</label>
+            <input type="email" class="bg-slate-300/30 border border-slate-600 my-3 rounded-lg p-1 ">
+            <div class="flex justify-end">
+                <input type="submit" class="text-xl font-semibold text-purple-600 bg-black rounded-lg my-5 py-1.5 shadow-xl cursor-pointer px-10  w-fit">
+            </div>
+        </form>
+
+        
+        <footer class="mx-5 my-5 mt-20 p-2 bg-slate-100/10 shadow-lg backdrop-blur-3xl rounded-lg">
+            <div class="">
+                <a href="../index.html"><h1 class="text-xl text-slate-200 p-5 text-center font-semibold">Townora App</h1></a>
+                <p class="font-light text-gray-400 text-center ">Developed by <span class="font-semibold selection:bg-black">GreatXt</span></p>
+                <p class="text-sm text-gray-400 text-center mt-3">© 2025 VisharamApp. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="../js/script.js"></script>
+</body>
+</html>

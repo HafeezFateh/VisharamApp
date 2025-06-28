@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TownHub</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-purple-950 to-gray-900">
+    
+        <div class="flex flex-col">
+            <!-- Header -->
+            <div id="header" class="top-5 fixed p-4 z-10  inset-x-5  bg-slate-50/20 rounded-lg backdrop-blur-3xl flex items-center justify-between">
+                <a href="../index.html"><h1 class="text-2xl text-slate-100 font-semibold">Townora App</h1></a>
+                <span onclick="handleClick()" class="cursor-pointer material-symbols-outlined text-white lg:hidden">menu</span>
+            </div>
+
+            <!-- Responsive Links below header -->
+            <div id="responsive-header" class="hidden flex fixed w-auto z-10 inset-x-5 flex-col  mt-25  gap-2  bg-slate-50/10 backdrop-blur-3xl rounded-lg ">
+                <a href="./aboutus.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-t-lg">About us</a>
+                <a href="./comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">News & updates</a>
+                <a href="./comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Blog</a>
+                <a href="./comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Town history</a>
+                <a href="./contact.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-b-lg">Contact us</a>
+            </div>
+        </div>
+        
+        <section class=" text-gray-100 py-12 px-6 max-w-4xl mx-auto mt-20">
+          <h2 class="text-3xl font-bold">About Us</h2>
+          <p class="mb-6 text-lg mt-2">
+            <strong>Townora</strong> is your all-in-one local companion, built to connect residents with the best their town has to offer. Whether you're looking to rent a house, find local services, or discover new food spots — Townora makes it easy and accessible.
+          </p>
+      
+          <ul class="list-disc mx-5 space-y-2 text-gray-100">
+            <li>🏠 Browse and post rental house listings with ease</li>
+            <li>📞 Access reliable local directories for shops, services, and more</li>
+            <li>🍽️ Discover local food and hidden culinary gems</li>
+            <li>📢 View or post scommunity ads and offers</li>
+            <li>📰 Stay updated with town news, events, and alerts</li>
+          </ul>
+      
+          <p class="mt-6 text-lg">
+            Designed for towns, driven by community — Townora connects people, places, and possibilities.
+          </p>
+        </section>
+
+        <footer class="mx-5 my-5 p-2 mt-20 bg-slate-100/10 shadow-lg backdrop-blur-3xl rounded-lg">
+            <div class="">
+                <a href="../index.html"><h1 class="text-xl text-slate-200 p-5 text-center font-semibold">Townora App</h1></a>
+                <p class="font-light text-gray-400 text-center ">Developed by <span class="font-semibold selection:bg-black">GreatXt</span></p>
+                <p class="text-sm text-gray-400 text-center mt-3">© 2025 VisharamApp. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="../js/script.js"></script>
+</body>
+</html>

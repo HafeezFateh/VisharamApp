@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TownHub</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./css/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
@@ -13,17 +13,17 @@
         <div class="flex flex-col">
             <!-- Header -->
             <div id="header" class="top-5 fixed p-4 z-10  inset-x-5  bg-slate-50/20 rounded-lg backdrop-blur-3xl flex items-center justify-between">
-                <h1 class="text-2xl text-slate-100 font-semibold">Townora App</h1>
+                <a href="#"><h1 class="text-2xl text-slate-100 font-semibold">Townora App</h1></a>
                 <span onclick="handleClick()" class="cursor-pointer material-symbols-outlined text-white lg:hidden">menu</span>
             </div>
 
             <!-- Responsive Links below header -->
             <div id="responsive-header" class="hidden flex fixed w-auto z-10 inset-x-5 flex-col  mt-25  gap-2  bg-slate-50/10 backdrop-blur-3xl rounded-lg ">
-                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-t-lg">About us</a>
-                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">News & updates</a>
-                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Blog</a>
-                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Town history</a>
-                <a href="" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-b-lg">Contact us</a>
+                <a href="./pages/aboutus.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-t-lg">About us</a>
+                <a href="./pages/comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">News & updates</a>
+                <a href="./pages/comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Blog</a>
+                <a href="./pages/comingsoon.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3">Town history</a>
+                <a href="./pages/contact.html" class="text-white hover:bg-slate-50/10 px-4 text-sm py-3 rounded-b-lg">Contact us</a>
             </div>
         </div>
 
@@ -45,26 +45,36 @@
             </div>
         </div>
         <div class="mx-5 grid grid-cols-2 lg:grid-cols-4 gap-2 mt-10">
-            <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
-                <img src="./images/logs.svg" alt="" class="h-[100px] w-[100px]">
-                <h1 class="text-xl font-semibold text-slate-300">Directory</h1>
-            </div>
-            <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
-                <img src="./images/renthouse.svg" alt="" class="h-[100px] w-[100px]">
-                <h1 class="text-xl font-semibold text-slate-300">Rental house</h1>
-            </div>
-            <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
-                <img src="./images/business.svg" alt="" class="h-[100px] w-[100px]">
-                <h1 class="text-xl font-semibold text-slate-300">Businesses</h1>
-            </div>
-            <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
-                <img src="./images/food.svg" alt="" class="h-[100px] w-[100px]">
-                <h1 class="text-xl font-semibold text-slate-300">Foods</h1>
-            </div>
+            <a href="./pages/directory.html">
+                <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
+                    <img src="./images/logs.svg" alt="" class="h-[100px] w-[100px]">
+                    <h1 class="text-xl font-semibold text-slate-300">Directory</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
+                    <img src="./images/renthouse.svg" alt="" class="h-[100px] w-[100px]">
+                    <h1 class="text-xl font-semibold text-slate-300">Rental house</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
+                    <img src="./images/business.svg" alt="" class="h-[100px] w-[100px]">
+                    <h1 class="text-xl font-semibold text-slate-300">Businesses</h1>
+                </div>
+            </a>
+            <a href="">
+                <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
+                    <img src="./images/food.svg" alt="" class="h-[100px] w-[100px]">
+                    <h1 class="text-xl font-semibold text-slate-300">Foods</h1>
+                </div>
+            </a>
+            <a href="">
             <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
                 <img src="./images/events.svg" alt="" class="h-[100px] w-[100px]">
                 <h1 class="text-xl font-semibold text-slate-300">Events</h1>
             </div>
+            </a>
             <a href="#">
                 <div class="border flex flex-col gap-3 items-center p-4 border-slate-500 bg-slate-50/10 rounded-lg  w-full">
                     <img src="./images/medical.svg" alt="" class="h-[100px] w-[100px]">
@@ -86,13 +96,14 @@
         </div>
        
     </div>
-    <footer class="mx-5 my-5 mt-30 p-2 bg-slate-100/10 shadow-lg backdrop-blur-3xl rounded-lg">
-        <div class="">
-            <h1 class="text-xl text-slate-200 p-5 text-center font-semibold">Townora App</h1>
-            <p class="font-light text-gray-400 text-center">Developed by <span class="font-semibold">GreatXt</span></p>
-            <p class="text-sm text-gray-400 text-center mt-3">© 2025 VisharamApp. All rights reserved.</p>
-        </div>
+   
+    <footer class="mx-5 my-5 mt-20 p-2 bg-slate-100/10 shadow-lg backdrop-blur-3xl rounded-lg">
+            <div class="">
+                <a href="../index.html"><h1 class="text-xl text-slate-200 p-5 text-center font-semibold">Townora App</h1></a>
+                <p class="font-light text-gray-400 text-center ">Developed by <span class="font-semibold selection:bg-black">GreatXt</span></p>
+                <p class="text-sm text-gray-400 text-center mt-3">© 2025 VisharamApp. All rights reserved.</p>
+            </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
